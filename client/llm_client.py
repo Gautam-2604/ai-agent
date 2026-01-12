@@ -6,6 +6,7 @@ class LLMClient:
         self._client : AsyncOpenAI| None = None
 
     def get_client(self)->AsyncOpenAI:
+        
         if self._client is None:
             self._client = AsyncOpenAI(
                 api_key='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',
